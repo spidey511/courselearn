@@ -1,3 +1,7 @@
+{%load socialaccount%}
+
+{%load static%}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -50,10 +54,7 @@
                             <a href="#" class="text-sm text-purple-600 hover:text-purple-500">Forgot password?</a>
                         </div>
 
-                        <button class="w-full flex items-center justify-center gap-2 bg-white border border-gray-300 rounded-lg px-4 py-2 text-gray-700 hover:bg-gray-50 transition-colors">
-                            <img src="/api/placeholder/24/24" alt="Google Logo" class="w-6 h-6"/>
-                            Sign in with Google
-                        </button>
+                        <a href="{%provider_login_url 'google'%}">Signin with Google</a>
 
                         <div class="relative flex items-center my-2">
                             <div class="flex-grow border-t border-gray-300"></div>
